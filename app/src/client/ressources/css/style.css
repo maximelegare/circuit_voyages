@@ -64,3 +64,12 @@ ul {
 .liadmin:hover {
     color: yellow;
 }
+
+#msgEnreg{
+    color:red;
+}
+
+.style-cards {
+    margin: 15px;
+    padding: 12px;
+}
