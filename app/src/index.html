@@ -4,16 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projet exemple</title>
+    <title>Projet Circuit Voyages</title>
     <link rel="stylesheet" href="client/utilitaires/bootstrap-5.2.3-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="client/css/style.css">
-    <script src="client/utilitaires/jquery-3.6.3.min.js"></script>
-    <script src="client/utilitaires/bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
-    <script src="client/js/global.js"></script>
-    <script src="client/js/requetes.js"></script>
 </head>
-<body>
-    <!-- Menu de navigation -->
+
+<!-- À FAIRE :
+        1) Choisir des images sans droits d'auteur et les insérer dans les cadres;
+        2) Finir de personnaliser la partie HEADER (prendre uniquement ce que j'ai besoin dans le code du prof et supprimer le reste),
+        3) Faire les liens de redirection et m'assurer qu'ils fonctionnent;
+        4) Mettre des couleurs plus attrayantes et des images au besoin pour embellir l'apparance.
+-->
+
+
+<body> 
+    <!-- Menu de navigation
     <nav class="navbar navbar-expand-lg navbar-light bg-perso">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Boutique en ligne</a>
@@ -57,65 +62,12 @@
         </div>
         </div>
     </nav>
-<!-- Fin de menu de navigation -->
-<div class="container">
-    <!-- Modal Enregistrer -->
-    <div class="modal fade" id="modalEnreg" tabindex="-1" aria-labelledby="ModalEnregLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="ModalEnregLabel">Nouveau membre</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <form class="row g-3" id="formEnreg">
-                        <div class="col-md-6">
-                            <label for="prenom" class="form-label">Prénom</label>
-                            <input type="text" class="form-control" id="prenom" name="prenom" value="" required>
-                        </div>
-                        <div class="col-md-6">
-                            <label for="nom" class="form-label">Nom</label>
-                            <input type="text" class="form-control" id="nom" name="nom" value="" required>
-                        </div>
-                        <div class="col-md-12">
-                            <label for="courriel" class="form-label">Courriel</label>
-                            <input type="email" class="form-control" id="courriel" name="courriel" value="" required>
-                        </div>
-                        <div class="col-md-6">
-                            <label for="pass" class="form-label">Mot Passe</label>
-                            <input type="password" class="form-control" id="pass" name="pass" required>
-                        </div>
-                        <div class="col-md-6">
-                            <label for="cpass" class="form-label">Confirmer mot passe</label>
-                            <input type="password" class="form-control" id="cpass" name="cpass" required>
-                        </div>
-                        <span class="msgFormEnreg">Pour des raison statistiques</span>
-                        <div class="form-check mb-3">
-                            <input type="radio" class="form-check-input" id="feminin" value="F" name="sexe">
-                            <label class="form-check-label" for="feminin">Féminin</label>
-                        </div>
-                        <div class="form-check mb-3">
-                            <input type="radio" class="form-check-input" id="masculin" value="M" name="sexe">
-                            <label class="form-check-label" for="masculin">Masculin</label>
-                        </div>
-                        <div class="form-check mb-3">
-                            <input type="radio" class="form-check-input" id="autre" value="A" name="sexe">
-                            <label class="form-check-label" for="autre">Autre</label>
-                        </div>
-                        <div class="col-md-6">
-                            <label for="date" class="form-label">Date de naissance</label>
-                            <input type="date" class="form-control" id="datenaissance" name="datenaissance">
-                        </div>
-                        <div class="col-12">
-                            <button class="btn btn-primary" type="button" onClick="requeteEnregistrer();">Enregister</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
+-->
 
-    <!-- Modal Connexion -->
+<!-- Fin de menu de navigation 
+<div class="container"> -->
+
+    <!-- Modal Connexion 
     <div class="modal fade" id="modalConnexion" tabindex="-1" aria-labelledby="ModalConnexionLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -141,7 +93,158 @@
             </div>
         </div>
     </div>
-
 </div>
-</body>
+-->
+    
+
+<!-- DÉBUT DE HEADER -->    
+<header data-bs-theme="dark">
+    <!-- BARRE DE NAVIGATION CACHÉE -->
+    <div class="collapse text-bg-dark" id="navbarHeader">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 col-md-7 py-4">
+          <h4>About</h4>
+          <p class="text-body-secondary">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.</p>
+        </div>
+        <div class="col-sm-4 offset-md-1 py-4">
+          <h4>Contact</h4>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white">Follow on Twitter</a></li>
+            <li><a href="#" class="text-white">Like on Facebook</a></li>
+            <li><a href="#" class="text-white">Email me</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- BARRE DE NAVIGATION À DÉCOUVERT -->
+  <div class="navbar navbar-dark bg-dark shadow-sm">
+    <div class="container">
+      <a href="#" class="navbar-brand d-flex align-items-center">
+        <!-- Logo --> 
+        <svg xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewBox="0 0 20 20">
+            <image href="client/img/GTF_logo_final.svg" width="100%" height="100%" />
+        </svg>
+        <!-- Nom de l'entreprise --> 
+        <strong id="nom_entreprise"> Globes-Trotteurs Fous </strong>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </div>
+</header>
+<!-- Fin de Header --> 
+
+
+<!-- DÉBUT DE MAIN --> 
+<main>
+  <!-- PARTIE CENTRALE : SLOGAN ET PRÉSENTATION DE L'ENTREPRISE-->
+  <section class="py-5 mb-0 text-center container custom-section">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="fw-light">Osez l'inconnu et embarquez à bord!</h1>
+        <p class="lead text-body-secondary">Que ce soit pour des paysages à couper le souffle, des aventures palpitantes ou des rencontres authentiques, notre équipe passionnée se tient à votre entière disposition, prête à réaliser vos souhaits les plus audacieux. Des voyages sur mesure, des moments magiques et des rencontres inoubliables vous attendent. Avec les Globes-Trotteurs Fous, l'inattendu devient la norme et chaque voyage devient une histoire à raconter.</p>
+        <br>
+        <p>
+          <a href="#" class="btn btn-primary my-2">Devenir Membre</a>
+          <a href="#" class="btn btn-secondary my-2">Planifier votre circuit!</a> <br><br>
+          <a href="#">Déjà Membre? Se connecter</a> <br>
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- PARTIE CENTRALE : DESCRIPTION ET IMAGE DES CIRCUITS -->
+  <div class="album py-5 mt-0 bg-body-tertiary custom-margin">
+    <div class="container">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <!-- Image du circuit #1 -->
+        <div class="col">
+            <div class="card shadow-sm">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Circuit_1</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Image</text></svg>
+              <!-- Description du circuit #1 -->
+              <div class="card-body">
+                <strong>Safari en Afrique</strong>
+                <p class="card-text">Lancez-vous dans un <strong>Safari en Afrique</strong> inoubliable! Explorez les merveilles du Mozambique, de l'Angola et de Madagascar, où des parcs nationaux spectaculaires, des réserves protégées et des paysages spectaculaires vous réservent des expériences captivantes. Plongez au coeur de la nature sauvage, découvrez une faune et une flore exceptionnelles, et laissez-vous envoûter par la magie de ces destinations uniques. </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <!-- Bouton "En savoir plus" -->
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">En savoir plus</button>
+                  </div>
+                  <!-- Texte "À partir de" -->
+                  <small class="text-body-secondary">À partir de <strong>2,000$</strong></small>
+                </div>
+              </div>
+            </div>
+          </div>
+        <!-- Image du circuit #2 -->
+        <div class="col">
+            <div class="card shadow-sm">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Circuit_2</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Image</text></svg>
+              <!-- Description du circuit #2 -->
+              <div class="card-body">
+                <strong>Escapade en Océanie</strong>
+                <p class="card-text">Partez pour une <strong>Escapade en Océanie</strong> extraordinaire et explorez les trésors cachés de l'Australie, de la Nouvelle-Zélande et des îles Salomon. Des aventures uniques vous attendent dans cette escapade où la nature grandiose se mêle à une richesse culturelle fascinante. Préparez-vous à vivre des moments magiques au coeur de l'Océanie, une expérience qui restera gravée dans votre mémoire à jamais.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <!-- Bouton "En savoir plus" -->
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">En savoir plus</button>
+                  </div>
+                  <!-- Texte "À partir de" -->
+                  <small class="text-body-secondary">À partir de <strong>3,000$</strong></small>
+                </div>
+              </div>
+            </div>
+          </div>
+        <!-- Image du circuit #3 -->
+        <div class="col">
+          <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Circuit_3</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Image</text></svg>
+            <!-- Description du circuit #3 -->
+            <div class="card-body">
+              <strong>Odyssée en Amérique Latine</strong>
+              <p class="card-text">Partez pour une <strong>Odyssée en Amérique Latine</strong> et laissez-vous enchanter par les merveilles cachées de cette région riche. Plongez dans la beauté mystérieuse du Venezuela, laissez-vous séduire par la passion du Brésil et imprégnez-vous de l'authenticité de l'Uruguay.Embarquez dès maintenant pour une escapade passionnante à travers l'Amérique Latine et explorez ces joyaux qui vous ensorcelleront à jamais.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <!-- Bouton "En savoir plus" -->
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">En savoir plus</button>
+                </div>
+                <!-- Texte "À partir de" -->
+                <small class="text-body-secondary">À partir de <strong>2,500$</strong></small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+<!-- Fin de Main -->
+
+
+<!-- DÉBUT DE FOOTER -->
+<footer class="text-body-secondary py-5">
+  <div class="container">
+    <!-- Lien haut de page -->
+    <p class="float-end mb-1">
+      <a href="#">Haut de page</a>
+    </p>
+    <!-- Auteurs et Droits -->
+    <p class="mb-1">
+        &copy; Globes-Trotteurs Fous | Référencement et conception par : </p>
+    <p class="mb-0">Marc-André Labbé Descôteaux, Véronique Lavoie & Maxime Légaré.</p>
+  </div>
+</footer>
+<!-- Fin de Footer -->
+
+
+<!-- LIENS JAVASCRIPT -->
+<script src="client/utilitaires/jquery-3.6.3.min.js"></script>
+<script src="client/utilitaires/bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
+<script src="client/js/global.js"></script>
+<script src="client/js/requetes.js"></script>
+<script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+    </body>
 </html>
