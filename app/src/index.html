@@ -85,11 +85,11 @@
                             <input type="email" class="form-control" id="courrielc" name="courrielc" value="" required>
                         </div>
                         <div class="col-md-6">
-                            <label for="pass" class="form-label">Mot Passe</label>
+                            <label for="pass" class="form-label">Mot de passe</label>
                             <input type="password" class="form-control" id="passc" name="passc" required>
                         </div>
                         <div class="col-12">
-                            <button class="btn btn-primary" type="button" onClick="connexion();">Connexion</button>
+                            <button class="btn btn-primary couleurLogoboutonPopup" type="button" onClick="connexion();">Connexion</button>
                         </div>
                         <p id="msg2"></p>
                     </form>
@@ -123,14 +123,14 @@
                           <input type="email" class="form-control" id="courriel" name="courriel" value="" required>
                       </div>
                       <div class="col-md-6">
-                          <label for="pass" class="form-label">Mot Passe</label>
+                          <label for="pass" class="form-label">Mot de passe</label>
                           <input type="password" class="form-control" id="pass" name="pass" required>
                       </div>
                       <div class="col-md-6">
-                          <label for="cpass" class="form-label">Confirmer mot passe</label>
+                          <label for="cpass" class="form-label">Confirmer le mot de passe</label>
                           <input type="password" class="form-control" id="cpass" name="cpass" required>
                       </div>
-                      <span class="msgFormEnreg">Pour des raison statistiques</span>
+                      <span class="msgFormEnreg">Pour des raisons statistiques</span>
                       <div class="form-check mb-3">
                           <input type="radio" class="form-check-input" id="feminin" value="F" name="sexe">
                           <label class="form-check-label" for="feminin">Féminin</label>
@@ -148,7 +148,7 @@
                           <input type="date" class="form-control" id="datenaissance" name="datenaissance">
                       </div>
                       <div class="col-12">
-                          <button class="btn btn-primary" type="button" onClick="enregistrer();">Enregister</button>
+                          <button class="btn btn-primary couleurLogoboutonPopup" type="button" onClick="enregistrer();">Enregister</button>
                       </div>
                   </form>
               </div>
@@ -162,26 +162,26 @@
 
 <!-- DÉBUT DE HEADER -->    
 <header data-bs-theme="dark">
-    <!-- BARRE DE NAVIGATION CACHÉE -->
+    <!-- BARRE DE NAVIGATION OUVERTE -->
     <div class="collapse text-bg-dark" id="navbarHeader">
     <div class="container">
       <div class="row">
         <div class="col-sm-8 col-md-7 py-4">
-          <h4>À propos de nous</h4>
+          <h4 style="color: #F0B84D;">À propos de nous</h4>
           <p class="text-body-secondary">Que ce soit pour des paysages à couper le souffle, des aventures palpitantes ou des rencontres authentiques, notre équipe passionnée se tient à votre entière disposition, prête à réaliser vos souhaits les plus audacieux. Des voyages sur mesure, des moments magiques et des rencontres inoubliables vous attendent.</p>
         </div>
-        <div class="col-sm-4 offset-md-1 py-4">
-          <h4>Contact</h4>
-          <ul class="list-unstyled">
-            <li><a href="#" class="text-white">Follow on Twitter</a></li>
-            <li><a href="#" class="text-white">Like on Facebook</a></li>
-            <li><a href="#" class="text-white">Email me</a></li>
+        <div class="col-sm-4 offset-md-1 py-4 menuMobile menuDesktop">
+          <h4 style="color: #F0B84D;">Menu</h4>
+          <ul class="list-unstyled" style="font-size: 20px;">
+            <li><a href="./client/circuits/circuits.html" class="text-white">Circuits</a></li>
+            <li><a href="./client/admin/admin.html" class="text-white">Membre</a></li>
+            <li><a href="./client/membre/membre.html" class="text-white">Admin</a></li>
           </ul>
         </div>
       </div>
     </div>
   </div>
-  <!-- BARRE DE NAVIGATION À DÉCOUVERT -->
+  <!-- BARRE DE NAVIGATION FERMÉE -->
   <div class="navbar navbar-dark bg-dark shadow-sm">
     <div class="container">
       <a href="#" class="navbar-brand d-flex align-items-center">
@@ -206,14 +206,15 @@
   <!-- PARTIE CENTRALE : SLOGAN ET PRÉSENTATION DE L'ENTREPRISE-->
   <section class="py-5 mb-0 text-center container custom-section">
     <div class="row py-lg-5">
-      <div class="col-lg-6 col-md-8 mx-auto bg-dark" style="color: antiquewhite; padding: 25px;">
-        <h1 class="fw-light">Osez l'inconnu et embarquez à bord!</h1>
+      <div class="col-lg-6 col-md-8 mx-auto rounded" style="color: rgb(255, 255, 255); padding: 25px; background-color: rgba(0, 0, 0, 0.629); ">
+        <h1 class="fw-light" style="color: rgb(240, 184, 77)">OSEZ L'INCONNU <br> ET EMBARQUEZ À BORD</h1>
+        <br>
         <p class="lead text-body-secondary">Avec les Globes-Trotteurs Fous, l'inattendu devient la norme et chaque voyage devient une histoire à raconter.</p>
         <br>
         <p>
-          <a href="#" class="btn btn-primary my-2" data-bs-toggle="modal" data-bs-target="#modalEnreg">Devenir Membre</a>
-          <a href="#" class="btn btn-secondary my-2">Planifier votre circuit!</a> <br><br>
-          <a href="#" data-bs-toggle="modal" data-bs-target="#modalConnexion">Déjà Membre? Se connecter</a> <br>
+          <a href="#" class="btn my-2 couleurLogoBorder couleurLogo" data-bs-toggle="modal" data-bs-target="#modalEnreg" style="margin-right:4%">Devenir Membre</a>
+          <a href="#" class="btn btn-secondary my-2">Planifiez votre circuit</a> <br><br><br>
+          <a href="#" data-bs-toggle="modal" data-bs-target="#modalConnexion" class="couleurLogo">Déjà Membre? Se connecter</a> <br>
         </p>
       </div>
     </div>
@@ -224,57 +225,57 @@
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
         <!-- Image du circuit #1 -->
         <div class="col">
-            <div class="card shadow-sm">
+            <div class="card shadow-sm border-0">
               <img src="client/ressources/images/Afrique.jpg" alt="Afrique" class="custom-image" />
               <!-- Description du circuit #1 -->
               <div class="card-body">
-                <strong>Safari en Afrique</strong>
+                <h3>Safari en Afrique</h2>
                 <p class="card-text">Lancez-vous dans un <strong>Safari en Afrique</strong> inoubliable! Explorez les merveilles du Mozambique, de l'Angola et de Madagascar, où des parcs nationaux spectaculaires, des réserves protégées et des paysages éblouissants vous réservent des expériences captivantes. Plongez au coeur de la nature sauvage, découvrez une faune et une flore exceptionnelles, et laissez-vous envoûter par la magie de ces destinations uniques et enivrantes. </p>
                 <div class="d-flex justify-content-between align-items-center">
                   <!-- Bouton "En savoir plus" -->
                   <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">En savoir plus</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary couleurLogoSavoirPlus">En savoir plus</button>
                   </div>
                   <!-- Texte "À partir de" -->
-                  <small class="text-body-secondary">À partir de <strong>2,000$</strong></small>
+                  <small class="text-body-secondary">À partir de <strong>2,000 $</strong></small>
                 </div>
               </div>
             </div>
           </div>
         <!-- Image du circuit #2 -->
         <div class="col">
-            <div class="card shadow-sm">
+            <div class="card shadow-sm border-0">
               <img src="client/ressources/images/Oceanie.jpg" alt="Oceanie" class="custom-image" />
               <!-- Description du circuit #2 -->
               <div class="card-body">
-                <strong>Escapade en Océanie</strong>
+                <h3>Escapade en Océanie</h2>
                 <p class="card-text">Partez pour une <strong>Escapade en Océanie</strong> extraordinaire et explorez les trésors cachés de l'Australie, de la Nouvelle-Zélande et des îles Salomon. Des aventures uniques vous attendent dans cette escapade où la nature grandiose se mêle à une richesse culturelle fascinante. Préparez-vous à vivre des moments magiques au coeur de l'Océanie, une expérience qui restera gravée dans votre mémoire pour toujours.</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <!-- Bouton "En savoir plus" -->
                   <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">En savoir plus</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary couleurLogoSavoirPlus">En savoir plus</button>
                   </div>
                   <!-- Texte "À partir de" -->
-                  <small class="text-body-secondary">À partir de <strong>3,000$</strong></small>
+                  <small class="text-body-secondary">À partir de <strong>3,000 $</strong></small>
                 </div>
               </div>
             </div>
           </div>
         <!-- Image du circuit #3 -->
         <div class="col">
-          <div class="card shadow-sm">
+          <div class="card shadow-sm border-0">
             <img src="client/ressources/images/Amerique_Latine.jpg" alt="Amerique_Latine" class="custom-image" />
             <!-- Description du circuit #3 -->
             <div class="card-body">
-              <strong>Odyssée en Amérique Latine</strong>
+              <h3>Odyssée en Amérique Latine</h2>
               <p class="card-text">Osez pour une <strong>Odyssée en Amérique Latine</strong> et laissez-vous enchanter par les merveilles cachées de cette splendide région. Plongez dans la beauté mystérieuse du Venezuela, laissez-vous séduire par la passion du Brésil et imprégnez-vous de l'authenticité de l'Uruguay. Embarquez dès maintenant pour une escapade passionnante à travers l'Amérique Latine et explorez ces joyaux qui vous ensorcelleront à jamais.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <!-- Bouton "En savoir plus" -->
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">En savoir plus</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary couleurLogoSavoirPlus">En savoir plus</button>
                 </div>
                 <!-- Texte "À partir de" -->
-                <small class="text-body-secondary">À partir de <strong>2,500$</strong></small>
+                <small class="text-body-secondary">À partir de <strong>2,500 $</strong></small>
               </div>
             </div>
           </div>
@@ -287,11 +288,11 @@
 
 
 <!-- DÉBUT DE FOOTER -->
-<footer class="text-body-secondary py-5 bg-dark" style="color: antiquewhite;">
+<footer class="text-body-secondary py-4 bg-dark" style="color: rgb(255, 255, 255);">
   <div class="container">
     <!-- Lien haut de page -->
     <p class="float-end mb-1">
-      <a href="#">Haut de page</a>
+      <a href="#" class="couleurLogo">Haut de page</a>
     </p>
     <!-- Auteurs et Droits -->
     <p class="mb-1">
@@ -300,14 +301,6 @@
   </div>
 </footer>
 <!-- Fin de Footer -->
-
-
-<!-- LIENS JAVASCRIPT -->
-<script src="client/utilitaires/jquery-3.6.3.min.js"></script>
-<script src="client/utilitaires/bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
-<script src="client/js/global.js"></script>
-<script src="client/js/requetes.js"></script>
-<script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
 
     </body>
 </html>

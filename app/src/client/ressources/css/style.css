@@ -1,6 +1,6 @@
 #nom_entreprise {
-  font-size: 28px;
-  margin-left: 10px;
+  font-size: 22px;
+  margin-left: 20px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
@@ -175,3 +175,66 @@ ul {
 h4, h1 {
   color: rgb(104, 207, 190)
 }
+
+.my-2{
+  margin-right: 10px;
+}
+
+.couleurLogo{
+  color:#f6f6f6;
+}
+
+.couleurLogo:hover{
+  color:#F0B84D;
+}
+
+.couleurLogoBorder{
+  border: 2px solid #ffffff;
+}
+
+.couleurLogoBorder:hover{
+  border: 2px solid #F0B84D;
+}
+
+.couleurLogoSavoirPlus:hover{
+  color: #ffffff;
+  font-weight: 600;
+  background-color: #F0B84D;
+  border: 1px solid #F0B84D;
+}
+
+.couleurLogoSavoirPlus{
+  font-weight: 600;
+}
+
+.couleurMenuOuvert {
+  color:#F0B84D
+}
+
+
+.couleurLogoboutonPopup{
+  color: #ffffff;
+  font-weight: 600;
+  border: 1px solid #6c757d;
+  background-color: #6c757d;
+}
+
+.couleurLogoboutonPopup:hover{
+  color: #F0B84D;
+  font-weight: 600;
+  border: 1px solid #F0B84D;
+  background-color: transparent;
+}
+
+@media only screen and (max-width: 575px) {
+  .menuMobile {
+    text-align: left;
+  }
+}
+
+@media only screen and (min-width: 576px) {
+  .menuDesktop {
+    text-align: right;
+  }
+}
+

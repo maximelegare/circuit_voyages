@@ -10,6 +10,7 @@ let enregistrer = () =>  {
 		.then(reponseJSON => {
 			// afficherMessage("msgE",reponseJSON.msg);// Définie dans js/global.js. Le id où afficher et le message
 			console.log( "[reponse]",reponseJSON)
+			
 		})
 		.catch((error) => {
 			console.log( "[error]",error)

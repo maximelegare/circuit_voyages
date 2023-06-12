@@ -7,6 +7,7 @@ const formaterDonneesFormData = (formData) => {
 }
 
 
+// Temps que le message reste actif pour l'utilisateur avant sa disparition de l'écran.
 const afficherMsg = (id,msg) => {
     document.getElementById(id).innerHTML = msg;
     let st = setInterval(() => {
