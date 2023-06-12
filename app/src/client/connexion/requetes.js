@@ -9,7 +9,7 @@ let connexion = () =>  {
 		.then(reponse => reponse.json())
 		.then(reponseJSON => {
 			if(reponseJSON.OK){
-				if(reponseJSON.statut == "A"){
+				if(reponseJSON.statut === "A"){
 					switch(reponseJSON.role){
 						case "A":
 							window.location.href="client/admin/admin.html";

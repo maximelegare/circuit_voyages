@@ -1,8 +1,8 @@
 --
 -- Base de données : `e23circuits`
 --
-CREATE DATABASE IF NOT EXISTS `e23circuits` DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci;
-USE `e23circuits`;
+-- CREATE DATABASE IF NOT EXISTS `e23circuits` DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci;
+-- USE `e23circuits`;
 
 -- --------------------------------------------------------
 

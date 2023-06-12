@@ -8,9 +8,11 @@ let enregistrer = () =>  {
 		})
 		.then(reponse => reponse.json())
 		.then(reponseJSON => {
-			afficherMessage("msgE",reponseJSON.msg);// Définie dans js/global.js. Le id où afficher et le message
+			// afficherMessage("msgE",reponseJSON.msg);// Définie dans js/global.js. Le id où afficher et le message
+			console.log( "[reponse]",reponseJSON)
 		})
 		.catch((error) => {
-			afficherMessage("msgE", "Problème pour enregistrer membre, essayez plus tard. Merci.");
+			console.log( "[error]",error)
+			// afficherMessage("msgE", "Problème pour enregistrer membre, essayez plus tard. Merci.");
 		});
 }

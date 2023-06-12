@@ -1,21 +1,20 @@
 import { pool } from "../config/dbconf";
-let message = {msg:""};
+let message = { msg: "" };
 
 export const Mdl_Membre_enregistrer = async (membre: any): Promise<object> => {
-  
   //const connexion = await obtenirConnexion();
-  
+
   try {
-      const requeteMembre = "INSERT INTO membres VALUES(0,?,?,?,?,?)";
-    
-      await pool.query(requeteMembre, [
-      membre.prenom,
+    const requeteMembre = "INSERT INTO membres VALUES(0,?,?,?,?,?)";
+
+    await pool.query(requeteMembre, [
       membre.nom,
+      membre.prenom,
       membre.courriel,
       membre.sexe,
-      membre.datenaissance
+      membre.datenaissance,
     ]);
-     
+
     const requeteConnexion = "INSERT INTO connexion VALUES(?,?,?,?,?)";
     await pool.query(requeteConnexion, [
       1,
@@ -24,9 +23,9 @@ export const Mdl_Membre_enregistrer = async (membre: any): Promise<object> => {
       "M",
       "A",
     ]);
-      message.msg = "Membre bien enregistré";
-  } catch (e:any) {
-      message.msg = "Problème avec l'enregistrement du membre!";
+    message.msg = "Membre bien enregistré";
+  } catch (e: any) {
+    message.msg = "Problème avec l'enregistrement du membre!";
   } finally {
     return message;
   }

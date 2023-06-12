@@ -13,7 +13,7 @@ let message = {OK:true, msg:"", statut:"", role:""};
     
     try {
        nettoyerMsg(); 
-      const requeteSelection = "SELECT * FROM connexion WHERE courriel=? AND pass=?";
+      const requeteSelection = "SELECT * FROM connexion WHERE courriel=? AND mot_de_passe=?";
       let resultat: any = await pool.query( requeteSelection,[donneesConnexion.courrielc, donneesConnexion.passc]);
       //console.log(resultat);
       // [ [{idm: 1,courriel: 'marie@gmail.com',pass: '12345',role: 'M',statut: 'A'}],[ColumnDefinition {
@@ -22,6 +22,7 @@ let message = {OK:true, msg:"", statut:"", role:""};
             message.OK = true;
             message.statut = resultatJSON[0].statut; 
             message.role = resultatJSON[0].role;
+            message.msg ="utilisateur connecté";
       } else {
             message.OK = false;
             message.msg ="SVP vérifiez vos paramétres de connexion.";
