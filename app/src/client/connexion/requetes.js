@@ -21,13 +21,13 @@ let connexion = () =>  {
 							window.location.href="index.html";
 					}
 				} else{
-					afficherMessage("msgC","Contactez l'administrateur!");
+					afficherMsg("msgC","Contactez l'administrateur!");
 				}
 			} else {
-				afficherMessage("msgC",msg);// Définie dans js/global.js. Le id où afficher et le message
+				afficherMsg("msgC",msg);// Définie dans js/global.js. Le id où afficher et le message
 			}
 		})
 		.catch((error) => {
-			afficherMessage("msgC","Problème pour se connecter, essayez plus tard. Merci.");
+			afficherMsg("msgC","Problème pour se connecter, essayez plus tard. Merci.");
 		});
 }
