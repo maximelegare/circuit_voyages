@@ -7,7 +7,7 @@ export const Mdl_Membre_enregistrer = async (membre: any): Promise<object> => {
   try {
     const requeteMembre = "INSERT INTO membres VALUES(0,?,?,?,?,?)";
 
-    await pool.query(requeteMembre, [
+    const res = await pool.query(requeteMembre, [
       membre.nom,
       membre.prenom,
       membre.courriel,
@@ -15,9 +15,12 @@ export const Mdl_Membre_enregistrer = async (membre: any): Promise<object> => {
       membre.datenaissance,
     ]);
 
+    const objRes = {...res[0]}
+    const insertId =  JSON.parse(JSON.stringify(objRes)).insertId
+
     const requeteConnexion = "INSERT INTO connexion VALUES(?,?,?,?,?)";
     await pool.query(requeteConnexion, [
-      1,
+      insertId,
       membre.courriel,
       membre.pass,
       "M",
