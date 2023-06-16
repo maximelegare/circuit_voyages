@@ -238,3 +238,55 @@ h4, h1 {
   }
 }
 
+
+
+/* Début Page admin */
+ table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      padding: 8px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+
+    /* Styles CSS pour les boutons */
+    .edit-button, .delete-button {
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      padding: 8px 12px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      cursor: pointer;
+      margin: 2%;
+    }
+
+    .delete-button {
+      background-color: #f44336;
+    }
+
+    .add-button, .delete-selected-button {
+      background-color: #008CBA;
+      border: none;
+      color: white;
+      padding: 8px 12px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      cursor: pointer;
+      margin-right: 10px;
+      margin-top: 2%;
+    }
+
+    .delete-selected-button {
+      background-color: #f44336;
+    }
+    /* Fin Page admin */
